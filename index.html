@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Author" content="Kevin Kranenburg" />
+
+    <title>Arrays2</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <body>
+
+    <h1>Kevin Kranenburg MG1A</h1>
+    Patroon met nested for loops
+    <p id="opgave1"></p>
+
+    <script>
+        
+    let x,y,text="";
+
+function isOdd(num) { return num % 2;}
+
+for (x=1; x <=6; x++) {
+  for (y=1; y < x; y++) {
+    if (isOdd(y)) {
+      text = text + "&#129321";
+    } else {
+      text = text + "&#129392";
+    }
+  }
+  document.getElementById('opgave1').innerHTML += text + "<br>";
+  text='';
+}
+ 
+</script>
+
+	<a href="list.html" title="naar de array opdracht"><b>naar de array opdracht</b></a>
+
+	<div id="validatie">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+            </a>
+        </div>
+
+  </body>
+</html>
